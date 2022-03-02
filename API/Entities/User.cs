@@ -17,8 +17,11 @@
         // Login name eines Benutzers
         public string Login { get; set; }
 
-        // Passwort eines Benutzers
-        public string Password { get; set; }
+        // PasswortHash eines Benutzers
+        public byte[] PasswordHash { get; set; }
+
+        // PasswortSalt eines Benutzers
+        public byte[] PasswordSalt { get; set; }
 
         // Datum an dem der Nutzer erstellt wurde
         public DateTime CreationDate { get; set; }
